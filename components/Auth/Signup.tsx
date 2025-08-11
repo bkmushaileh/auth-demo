@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#2D2E2F",
     alignItems: "center",
     justifyContent: "center",
-    rowGap: 10,
+    rowGap: 5,
   },
   imgStyle: {
     width: 300,
@@ -60,7 +60,6 @@ const styles = StyleSheet.create({
   fieldsContainer: {
     width: 300,
     alignItems: "center",
-    marginTop: 20,
     rowGap: 2,
   },
   fieldLabel: {
