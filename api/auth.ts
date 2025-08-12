@@ -8,7 +8,11 @@ export interface UserInfo {
 
 export const login = async (userInfo: UserInfo) => {
   const { data } = await instance.post("auth/login", userInfo);
-  console.log("I am here:", data.token);
+  await storeToken(data.token);
+  return data;
+};
+export const signup = async (userInfo: FormData) => {
+  const { data } = await instance.post("auth/register", userInfo);
   await storeToken(data.token);
   return data;
 };
